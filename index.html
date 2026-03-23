@@ -25,6 +25,12 @@
           <li class="nav-item"><a class="nav-link" href="#products">Productos</a></li>
           <li class="nav-item"><a class="nav-link" href="#offers">Ofertas</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <button class="btn btn-outline-light position-relative" id="btn-open-cart">
+              🛒 Carrito
+              <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill" style="background-color: var(--accent); display: none;">0</span>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
@@ -219,6 +225,38 @@
       <p class="mb-0 small">© 2026 Skate District. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+<div class="cart-overlay" id="cart-overlay"></div>
+
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <div class="d-flex justify-content-between align-items-center p-3 border-bottom border-secondary text-white">
+      <h5 class="mb-0 fw-bold text-uppercase">🛒 Tu Carrito</h5>
+      <button class="btn btn-sm btn-outline-light border-0" id="btn-close-cart">✖</button>
+    </div>
+    
+    <div class="flex-grow-1 overflow-auto p-3" id="cart-items">
+      <div class="text-center mt-5" id="empty-cart-msg">
+        <i class="fa-solid fa-box-open fa-2x mb-3"></i>
+        <p>Tu carrito está vacío.<br>¡Agrega algo de equipo!</p>
+      </div>
+    </div>
+    
+    <div class="p-3 border-top border-secondary">
+      <div class="d-flex justify-content-between mb-3 text-white">
+        <span class="fs-5 fw-bold">Total:</span>
+        <span class="fs-4 fw-bold" style="color: var(--accent);" id="cart-total">$0.00</span>
+      </div>
+      <button id="btn-checkout" class="btn btn-skate w-100 fw-bold py-2 text-uppercase">Checkout</button>
+    </div>
+  </aside>
+
+  <div id="toast-add" class="toast-notification shadow-lg" style="background-color: var(--accent);">
+    <i class="fa-solid fa-cart-plus"></i> Producto agregado
+  </div>
+
+  <div id="toast-success" class="toast-notification shadow-lg" style="background-color: #28a745;">
+    <i class="fa-solid fa-check-double"></i> ¡Compra exitosa!
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
