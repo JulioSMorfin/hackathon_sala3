@@ -41,7 +41,7 @@ body {
   min-height: 95vh;
   padding-top: 80px;
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(13, 13, 13, 0.95)),
-    url("Pictures/Distrito Skate en llamas.jpg") center / cover no-repeat;
+    url("../Pictures/distrito.jpg") center / cover no-repeat;
 }
 
 /* Jerarquía visual */
