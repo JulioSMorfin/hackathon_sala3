@@ -1,3 +1,4 @@
+/* COLORES DEL FONDO DE LA PAGINA */
 :root {
   --bg-main: #0D0D0D;       /* fondo principal */
   --bg-alt: #2E2E2E;        /* fondo alterno */
@@ -11,7 +12,7 @@
 * {
   box-sizing: border-box;
 }
-
+/* tipo de letra y colores de fondo  */
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--bg-main);
@@ -40,7 +41,7 @@ body {
   min-height: 95vh;
   padding-top: 80px;
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(13, 13, 13, 0.95)),
-    url("../Pictures/PicHero.png") center / cover no-repeat;
+    url("../Pictures/distrito.jpg") center / cover no-repeat;
 }
 
 /* Jerarquía visual */
