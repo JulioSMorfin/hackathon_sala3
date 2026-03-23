@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cartButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      alert("Product added to cart.");
+      alert("Producto añadido al carrito");
     });
   });
 
   if (contactForm) {
     contactForm.addEventListener("submit", (event) => {
       event.preventDefault();
-      formMessage.textContent = "Thanks! Your message has been sent.";
+      formMessage.textContent = "¡Gracias! Hemos recibido tu mensaje.";
       contactForm.reset();
     });
   }
