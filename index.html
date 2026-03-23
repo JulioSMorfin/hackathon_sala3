@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <!-- Barra de navegación principal (Navbar).-->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top skate-navbar">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#home">Skate District</a>
@@ -19,11 +20,11 @@
       </button>
       <div class="collapse navbar-collapse" id="mainMenu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
-          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categories">Categorías</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#offers">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
           <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
             <button class="btn btn-outline-light position-relative" id="btn-open-cart">
               🛒 Carrito
@@ -34,18 +35,18 @@
       </div>
     </div>
   </nav>
-
+<!-- Sección principal de la página. -->
   <header id="home" class="hero-section d-flex align-items-center">
     <div class="container text-center">
-      <h1 class="display-4 fw-bold">Ride Your Style</h1>
-      <p class="lead">Skate District brings the best setup for street, park, and everyday skate culture.</p>
-      <a href="#products" class="btn btn-skate btn-lg">Shop Now</a>
+      <h1 class="display-4 fw-bold">Vive tu estilo</h1>
+      <p class="lead">Skate District ofrece la mejor configuración para street, park y la cultura skate del día a día.</p>
+      <a href="#products" class="btn btn-skate btn-lg">Compra ahora</a>
     </div>
   </header>
-
+<!-- Categorías de los productos -->
   <section id="categories" class="py-5">
     <div class="container">
-      <h2 class="section-title text-center mb-4">Categories</h2>
+      <h2 class="section-title text-center mb-4">Categorías</h2>
       <div class="row g-3">
         <div class="col-6 col-md-4 col-lg-3"><div class="category-chip">Tablas</div></div>
         <div class="col-6 col-md-4 col-lg-3"><div class="category-chip">Lijas</div></div>
@@ -57,11 +58,11 @@
       </div>
     </div>
   </section>
-
+<!-- Sección de productos. -->
   <section id="products" class="py-5 section-dark">
     <div class="container">
-      <h2 class="section-title text-center mb-4">Featured Products</h2>
-      <p class="text-center section-subtitle mb-5">Simple picks for a complete setup.</p>
+      <h2 class="section-title text-center mb-4">Productos destacados</h2>
+      <p class="text-center section-subtitle mb-5">Selecciones simples para un equipo completo.</p>
       <div class="row g-4">
         <div class="col-md-6 col-lg-4">
           <article class="product-card h-100">
@@ -150,52 +151,52 @@
       </div>
     </div>
   </section>
-
+<!-- Sección de beneficios y ofertas -->
   <section id="offers" class="py-5">
     <div class="container">
-      <h2 class="section-title text-center mb-4">Benefits & Offers</h2>
+      <h2 class="section-title text-center mb-4">Beneficios y ofertas</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="info-box">
-            <h3 class="h5">Free Shipping</h3>
-            <p>Free delivery for purchases over $80 nationwide.</p>
+            <h3 class="h5">Envío gratis</h3>
+            <p>Entrega gratuita en compras mayores a $300 en todo el país.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="info-box">
-            <h3 class="h5">Starter Deals</h3>
-            <p>Save 15% on complete skateboard bundles this month.</p>
+            <h3 class="h5">Ofertas para principiantes</h3>
+            <p>Ahorra un 15% en paquetes completos de skate este mes..</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="info-box">
-            <h3 class="h5">Trusted Gear</h3>
-            <p>Quality products selected for beginner and pro skaters.</p>
+            <h3 class="h5">Equipo confiable</h3>
+            <p>Productos de calidad seleccionados para skaters principiantes y profesionales.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+<!-- Sección de contacto de la landing page. -->
   <section id="contact" class="py-5 section-dark">
     <div class="container">
-      <h2 class="section-title text-center mb-4">Contact Us</h2>
+      <h2 class="section-title text-center mb-4">Contáctenos</h2>
       <div class="row justify-content-center">
         <div class="col-lg-7">
           <form id="contactForm" class="contact-form">
             <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
+              <label for="name" class="form-label">Nombre</label>
               <input type="text" id="name" class="form-control" required>
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
+              <label for="email" class="form-label">Correo electrónico</label>
               <input type="email" id="email" class="form-control" required>
             </div>
             <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
+              <label for="message" class="form-label">Mensaje</label>
               <textarea id="message" rows="4" class="form-control" required></textarea>
             </div>
-            <button type="submit" class="btn btn-skate">Send Message</button>
+            <button type="submit" class="btn btn-skate">Enviar mensaje</button>
             <p id="formMessage" class="form-message mt-3 mb-0"></p>
           </form>
         </div>
@@ -203,11 +204,12 @@
     </div>
   </section>
 
+  <!-- Footer principal de la página. -->
   <footer class="py-4 footer-section">
     <div class="container text-center">
       <h2 class="h5 mb-2">Skate District</h2>
-      <p class="mb-1">Email: contact@skatedistrict.com | Phone: +1 555 123 4567</p>
-      <p class="mb-0 small">© 2026 Skate District. All rights reserved.</p>
+      <p class="mb-1">Correo electrónico: contact@skatedistrict.com | Teléfono: +1 555 123 4567</p>
+      <p class="mb-0 small">© 2026 Skate District. Todos los derechos reservados.</p>
     </div>
   </footer>
 

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (contactForm) {
     contactForm.addEventListener("submit", (event) => {
       event.preventDefault();
-      formMessage.textContent = "Thanks! Your message has been sent.";
+      formMessage.textContent = "¡Gracias! Hemos recibido tu mensaje.";
       contactForm.reset();
     });
   }
